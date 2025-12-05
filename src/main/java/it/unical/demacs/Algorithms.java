@@ -23,7 +23,7 @@ public class Algorithms {
         }
 
         for (int i = 0; i < words.length; i++) {
-            if (words[i].isEmpty()) {
+            if (words[i].length() == 0) {
                 continue;
             }
 
@@ -51,7 +51,7 @@ public class Algorithms {
             int key = array[i];
             int j = i - 1;
 
-            while (j > 0 && array[j] > key) {
+            while (j >= 0 && array[j] > key) {
                 array[j + 1] = array[j];
                 j = j - 1;
             }
@@ -61,4 +61,3 @@ public class Algorithms {
 
 
 }
-
